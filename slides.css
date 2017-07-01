@@ -1,7 +1,7 @@
 body
 {
-  width: 60%;
-  margin-left: 15%;
+margin: 30px;
+color: #57272a;
 }
 
 a
@@ -14,28 +14,43 @@ nav ul
   list-style: none;
   display: inline;
   margin: 15%;
-
 }
 
 nav li
 {
   display: inline;
   padding: 30px;
-
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
 }
 
 header
 {
   text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.8em;
 }
 
 h3
 {
-  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1.3em;
+  display: block;
+  width: 15%;
+  float: left;
+  height: 500px;
 }
-.projects ul li
+
+.about p
+{
+  width: 80%;
+  display: block;
+}
+
+.projects li
 {
   display: inline;
+  float: left;
 }
 
 
