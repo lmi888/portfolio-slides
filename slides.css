@@ -1,6 +1,7 @@
 body
 {
-
+margin: 0;
+padding: 0;
 }
 
 a
@@ -10,7 +11,13 @@ a
 
 h1, h2, h3
 {
-  font-family: Cinzel, sans-serif;
+  font-family: 'Cinzel', serif;
+}
+
+h3
+{
+  text-align: center;
+  font-size: 1.8em;
 }
 
 .header
@@ -20,6 +27,7 @@ h1, h2, h3
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
 }
 
 nav > ul
@@ -38,13 +46,9 @@ nav > li
   align-items: center;
 }
 
-
-
-
-
 .about
 {
-  font-family: EB Garamond;
+  font-family: 'EB Garamond', serif;
   font-size: 1.2em;
   width: 80%;
 }
@@ -52,7 +56,7 @@ nav > li
 nav ul,li
 {
   list-style: none;
-  font-family: Cinzel, sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .projects ul
@@ -63,11 +67,12 @@ nav ul,li
   padding-top: 25px;
   justify-content: space-around;
   font-size: 20px;
-  background-image: url("images/littlegardener.jpg");
+  /*background-image: url("images/littlegardener.jpg");
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  */
 }
 
 .projects li
@@ -82,18 +87,81 @@ nav ul,li
   height: 200px;
 }
 
+.social
+{
+  display: --webkit-flex;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-family: 'Cinzel', serif;
+  font-size: 25px;
+}
+
+.social img
+{
+  height: 25px;
+  width: 25px;
+}
+
 .contact
 {
     display: --webkit-flex;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     padding-top: 25px;
     justify-content: space-around;
     font-size: 20px;
+    align-items: center;
     background-image: url("images/cactus.jpg");
-    height: 300px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 100px;
+
+
 }
+
+input
+{
+margin: 20px;
+width: 400px;
+height: 30px;
+font-family: 'EB Garamond', serif;
+font-size: 1em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid gray;
+padding: 5px;
+}
+
+textarea
+{
+  width: 400px;
+  height: 100px;
+  font-family: 'EB Garamond', serif;
+  font-size: 1em;
+  border: 1px solid gray;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button
+{
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
